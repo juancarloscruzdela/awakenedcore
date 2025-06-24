@@ -1,0 +1,30 @@
+.bold {
+  font-family: RobotoBold, sans-serif;
+}
+.semi-bold {
+  font-family: RobotoSemiBold, sans-serif;
+}
+.medium {
+  font-family: RobotoMedium, sans-serif;
+}
+.text-tiny{
+    font-size: 12px;
+}
+.text-small{
+    font-size: 14px;
+}
+.text-base{
+    font-size: 16px;
+}
+.text-lg{
+    font-size: 18px;
+}
+.text-d1{
+    font-size: 32px;
+}
+.text-d2{
+    font-size: 30px;
+}
+.text-d3{
+    font-size: 24px;
+}

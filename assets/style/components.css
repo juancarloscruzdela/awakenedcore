@@ -1,0 +1,426 @@
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-primary{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;3
+  border-radius: 5px;
+}
+.btn-primary:hover{
+  background-color: #0056b3;
+}
+.btn-secondary{
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.btn-secondary:hover{
+  background-color: #5a6268;
+}
+
+/* Product grid */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+.popular-products {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.view-all-link {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.product-image {
+  background-color: #999;
+  height: 180px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.product-title {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 14px;
+}
+
+.price-new {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0.25rem 0;
+}
+
+.rating {
+  font-size: 14px;
+  margin: 0.5rem 0;
+}
+
+.review {
+  margin-left: 5px;
+}
+
+.sold {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.view-button {
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.view-button:hover {
+  opacity: 0.9;
+}
+
+.view-all-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-all-card a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.view-all-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+.arrow {
+  font-size: 24px;
+}
+
+/* Responsive layout */
+@media (min-width: 600px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* end product grid */
+
+/* Newsletter & Footer */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Newsletter */
+.newsletter {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: #fff;
+}
+
+.newsletter h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.newsletter p {
+  font-size: 13px;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  font-weight: bold;
+  background: #111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+.footer-mobile {
+  background-color: #111;
+  padding: 1rem;
+  display: block;
+  color: #fff;
+}
+
+.accordion {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 1rem;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.accordion-content {
+  display: none;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+}
+
+.accordion-content.open {
+  display: block;
+}
+
+/* Social */
+.social {
+  padding: 1rem;
+  text-align: center;
+}
+
+.social h3 {
+  margin-bottom: 0.5rem;
+}
+
+.icons a img {
+  width: 32px;
+  margin: 0 10px;
+}
+
+/* Copyright */
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .newsletter-form {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .newsletter-form input {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .footer-mobile {
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .accordion {
+    flex: 2;
+    margin-right: 2rem;
+  }
+
+  .social {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-desktop {
+  display: block;
+  background-color: #111;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 150px;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* Makes icons white */
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-desktop{
+    display: none;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-column {
+    text-align: left;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+
+/* End Newsletter & Footer */

@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: RobotoRegular, sans-serif;
+  background-color: #E8E8E8;
+}
+.px-5 {
+    padding: 0 20px;
+}
+.py-5 {
+    padding: 20px 0;
+}
+.p-5 {
+    padding: 20px;
+}
+
+/* nav mobile */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #d3d3d3;
+  color: #000;
+}
+
+.mobile-nav {
+  padding: 1rem;
+  position: relative;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.left-icons,
+.right-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hero Section */
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 120px;
+}
+
+.headline {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.slogan {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.shop-btn {
+  background-color: #000;
+  color: #E8E8E8;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.nav-wrapper{
+  color: #E8E8E8;
+  background-image: url('/assets/img/png/hero-section-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+}
+
+/* end nav mobile */
+
+/* Desktop nav */
+.desktop-nav {
+  display: none;
+}
+.desktop-nav {
+  padding: 1rem 2rem;
+  display: none; /* Hidden by default, shown only on large screens */
+}
+
+.desktop-nav-wrapper {
+    color: #E8E8E8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.desktop-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #E8E8E8;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto; /* Pushes icons to the right */
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+/* end Desktop nav */
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav {
+    display: flex; /* or block, depending on layout */
+  }
+  .nav-wrapper{
+    min-height: 700px;
+  }
+}
