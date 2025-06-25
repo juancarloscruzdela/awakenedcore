@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: RobotoRegular, sans-serif;
-  background-color: #E8E8E8;
+  background-color: #cfcbcb;
 }
 .px-5 {
     padding: 0 20px;
@@ -77,7 +77,7 @@ body {
 
 .shop-btn {
   background-color: #000;
-  color: #E8E8E8;
+  color: #cfcbcb;
   padding: 0.75rem 1.5rem;
   font-weight: bold;
   border: none;
@@ -85,15 +85,29 @@ body {
   cursor: pointer;
 }
 .nav-wrapper{
-  color: #E8E8E8;
-  background-image: url('https://juancarloscruzdela.github.io/awakenedcore/assets/img/png/hero-section-bg.jpg');
+  color: #cfcbcb;
+  background-image: url('../img/png/hero-section-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-
+  position: relative;
+}
+.nav-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 0;
 }
 
+.nav-wrapper > * {
+  position: relative;
+  z-index: 1;
+}
 /* end nav mobile */
 
 /* Desktop nav */
@@ -106,7 +120,7 @@ body {
 }
 
 .desktop-nav-wrapper {
-    color: #E8E8E8;
+    color: #cfcbcb;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,7 +148,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #E8E8E8;
+  color: #cfcbcb;
   font-weight: bold;
   font-size: 0.95rem;
 }
