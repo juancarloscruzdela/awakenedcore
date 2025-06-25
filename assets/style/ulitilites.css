@@ -5,19 +5,19 @@ body {
   background-color: #cfcbcb;
 }
 .px-5 {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 .py-5 {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 .p-5 {
-    padding: 20px;
+  padding: 20px;
 }
 
 /* nav mobile */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #d3d3d3;
   color: #000;
 }
@@ -84,9 +84,9 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
-.nav-wrapper{
+.nav-wrapper {
   color: #cfcbcb;
-  background-image: url('../img/png/hero-section-bg.jpg');
+  background-image: url("../img/png/hero-section-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@ body {
   position: relative;
 }
 .nav-wrapper::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -120,7 +120,7 @@ body {
 }
 
 .desktop-nav-wrapper {
-    color: #cfcbcb;
+  color: #cfcbcb;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -171,9 +171,9 @@ body {
     display: none;
   }
   .desktop-nav {
-    display: flex; /* or block, depending on layout */
+    display: flex;
   }
-  .nav-wrapper{
+  .nav-wrapper {
     min-height: 700px;
   }
 }
